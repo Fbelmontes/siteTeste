@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="./images/favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./public/css/tiny-slider.css">
+  
+  
+  <title>Eduxa Colégio Mundo Encantado</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+
+    <!-- Start Header/Navigation -->
+            <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    
+                <div class="container">
+                    <a class="navbar-brand" href="/">Eduxa<span>.</span></a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarsFurni">
+                        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li><a class="nav-link" href="/contact">Contato</a></li>
+                        </ul>
+    
+                        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                            <li><a class="nav-link" href="/cart"><img src="/public/images/cart.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+            </nav>
+            <!-- End Header/Navigation -->
+    
+            <!-- Start Hero Section -->
+                <div class="hero">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5">
+                                <div class="intro-excerpt">
+                                    <h1>Checkout</h1>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Hero Section -->
+            <!-- Formulario pai e filhos incio -->
+            <form id="myForm" action="https://api.sheetmonkey.io/form/8Afi1U3cDTgZnWscYtTfhp" method="post">
+            <div class="untree_co-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                      <h2 class="h3 mb-3 text-black">Dados do Responsavel e Aluno(s)</h2>
+                      <div class="p-3 p-lg-5 border bg-white">
+                        <div class="form-group">
+                          <label for="c_country" class="text-black">Pais <span class="text-danger">*</span></label>
+                          <select id="c_country" class="form-control">
+                            <option value="1">Selecione Seu Pais</option>    
+                            <option value="Brasil">Brasil</option>          
+                          </select>
+                        </div>
+                        
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_fname" class="text-black">Nome <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_fname" name="fistName">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_lname" class="text-black">Sobrenome <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_lname" name="lastName">
+                          </div>
+                        </div>
+    
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_address" class="text-black">CPF ou CNPJ <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_address" name="cpfOuCnpj" placeholder="">
+                          </div>
+    
+                          <div class="col-md-6">
+                            <label for="c_address" class="text-black">IE ou RG <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_address" name="ieOuRg" placeholder="">
+                          </div>
+                        </div>
+    
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_state_country" class="text-black">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="c_state_country" name="email">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_postal_zip" class="text-black">Cel <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="c_postal_zip" name="phone">
+                          </div>
+                        </div>
+    
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_state_country" class="text-black">Cep <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="c_state_country" name="postalCode">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_postal_zip" class="text-black"> Endereço <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="c_postal_zip" name="address">
+                          </div>
+                        </div>
+    
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_state_country" class="text-black">Numero <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="c_state_country" name="numberComplet">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_postal_zip" class="text-black"> Bairro <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="c_postal_zip" name="bar">
+                          </div>
+                        </div>
+    
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_state_country" class="text-black">Cidade <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="c_state_country" name="city">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_postal_zip" class="text-black"> Estado <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="c_postal_zip" name="state">
+                          </div>
+                        </div>
+                        
+                        <div>
+                            <br><br> 
+                        </div>
+    
+                        <div  class="form-group row">
+                          
+                         
+                          </div>                                     
+           
+                        <div  class="form-group row">
+                            <div class="col-md-6">
+                                <input hidden type="button" id="add-child" class="btn btn-primary" value="Adicionar Filho"></input>
+                            </div> 
+                            <div class="col-md-6">
+                                <input hidden type="button" id="remove-child" class="btn btn-danger " value=" Remover Filho "></input>
+                            </div>
+                        </div>
+                        
+    
+                    </div> 
+    
+                        <div class="form-group row mb-5">
+                          <div class="col-md-6">   
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <!-- form dad and suns end -->
+                    <div class="col-md-6">
+    
+                      <div class="row mb-5">
+                        <div class="col-md-12">
+                          <h2 class="h3 mb-3 text-black">Codigo do Cupom</h2>
+                          <div class="p-3 p-lg-5 border bg-white">
+    
+                            <label for="c_code" class="text-black mb-3">Digite o codigo do cupom</label>
+                            <div class="input-group w-75 couponcode-wrap">
+                              <input type="text" class="form-control me-2" id="c_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-black btn-sm" type="button" id="button-addon2">Aplicar</button>
+                              </div>
+                            </div>
+    
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="row mb-5">
+                        <div class="col-md-12">
+                          <h2 class="h3 mb-3 text-black">Sua Compra</h2>
+                          <div class="p-3 p-lg-5 border bg-white">
+                            <table class="table site-block-order-table mb-5">
+                              <thead>
+                                <th>Product</th>
+                                <th>Total</th>
+                              </thead>
+                              <tbody>
+                                <!-- Aqui vai cair os dados dos produtos -->
+                              </tbody>
+                            </table>
+                            
+                            <div class="form-group">
+                                  <input type="checkbox" id="myCheckbox" class="custom-checkbox" name="checkBox" value="Concordo com a compra que esta sendo realizado dentro da EDUXA" required> </input> 
+                                <label for="myCheckbox"> <strong> Concordo com a compra que esta sendo realizado dentro da EDUXA </strong> </label>
+                                <br><br>
+                            </div>
+    
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-black btn-lg py-3 btn-block">Processeguir ao Pagamento</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+    
+                      </div>
+                        </div>
+                  </div>
+                </div>
+    
+            </div>
+            <!-- Campos Hiden -->
+            <input type="hidden" name="Status" value="new" />
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        </form>              
+            </div>
+         
+                
+            <!-- start script JS-->
+<script>
+
+  // codigo para criação de inputs automatico 
+
+  document.addEventListener('DOMContentLoaded', function() {
+  // Obtém a tabela
+  var table = document.getElementById('myForm').querySelector('table');
+
+  // Percorre as linhas da tabela (ignorando o cabeçalho)
+  for (var i = 1; i < table.rows.length; i++) {
+    // Obtém a célula de nome do produto (considerando que seja a primeira célula da linha)
+    var productNameCell = table.rows[i].cells[0];
+
+    // Obtém a célula de valor do produto (considerando que seja a segunda célula da linha)
+    var productValueCell = table.rows[i].cells[1];
+
+    // Verifica se a célula contém o nome do produto e não o valor total
+    if (productNameCell && productValueCell && !productValueCell.classList.contains('total-cell')) {
+      // Cria um novo input para o nome do filho
+      var input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = 'Nome do Aluno';
+      input.className = 'form-control';
+      input.name = 'childName';  // Nome do input, ajuste conforme necessário
+
+      // Cria um novo input para o ano/série do aluno
+      var inputYear = document.createElement('input');
+      inputYear.type = 'text';
+      inputYear.readOnly = true;
+      inputYear.placeholder = 'Ano/Série do Aluno';
+      inputYear.className = 'form-control';
+      inputYear.name = 'childYear';
+      // Obtém o texto diretamente da célula de nome do produto
+      inputYear.value = productNameCell.textContent.trim();
+
+      // Adiciona os inputs à célula de nome do produto
+      productNameCell.appendChild(input);
+      productNameCell.appendChild(inputYear);
+    }
+  }
+});
+
+
+    
+  // Alimentação da tabela de produtos 
+      
+      // Função para converter um preço no formato "R$ 1135,00" para um número
+      const parsePrice = (priceString) => {
+    // Remove o "R$" e substitui a vírgula por um ponto como separador decimal
+    const cleanedPrice = priceString.replace('R$', '').replace(',', '.').trim();
+    return parseFloat(cleanedPrice);
+  };
+  
+  
+      // Acessa os dados do sessionStorage
+  const cartItems = sessionStorage.getItem('cartItems');
+  
+  // Converte os dados de string JSON para objeto JavaScript
+  const parsedCartItems = JSON.parse(cartItems);
+  
+  // Função para calcular e exibir o subtotal e o total do pedido
+  function calculateTotals(items) {
+    let subtotal = 0;
+  
+    // Itera pelos itens e soma os preços
+    items.forEach((item) => {
+      const price = parsePrice(item.price);
+      subtotal += price;
+    });
+  
+    const orderTotal = subtotal; // O mesmo que subtotal neste exemplo
+  
+    // Exibe os valores na tabela
+    document.querySelector('.site-block-order-table tbody').innerHTML += `
+      <tr>
+        <td class="text-black font-weight-bold total-cell"><strong>Valor Total da Compra</strong></td>
+        <td class="text-black total-cell " id="cartSubtotal"><strong>R$ ${subtotal.toFixed(2)}</strong></td>
+      </tr>
+    `;
+  
+    // Retorna o total do pedido
+    return orderTotal;
+  }
+  
+  // Função para calcular e atualizar o total dos produtos na tabela
+  function updateOrderTotal() {
+    const tableRows = document.querySelectorAll('.site-block-order-table tbody tr');
+  
+    let total = 0;
+    // Percorre as linhas da tabela, procurando valores de produtos e somando-os
+    tableRows.forEach((row) => {
+      const priceString = row.cells[1].textContent.replace('$', ''); // Obtém o valor sem o '$'
+      const price = parseFloat(priceString);
+      if (!isNaN(price)) {
+        total += price;
+      }
+    });
+  
+  
+  }
+  
+  // Função que preenche a tabela com os itens do carrinho
+  function fillOrderTable(items) {
+    const orderTableBody = document.querySelector('.site-block-order-table tbody');
+  
+    items.forEach((item) => {
+      const row = document.createElement('tr');
+      const productName = `${item.name} <strong class="mx-2">x</strong> 1`;
+      const productTotal = item.price;
+  
+      row.innerHTML = `
+        <td>${productName}</td>
+        <td>${productTotal}</td>
+      `;
+  
+      orderTableBody.appendChild(row);
+    });
+  
+    // Chama a função para calcular o total e exibir na tabela
+    const orderTotal = calculateTotals(parsedCartItems);
+  
+    // Chama a função para atualizar o total dos produtos na tabela
+    updateOrderTotal();
+  }
+  
+  // Preenche a tabela com os itens do carrinho
+  fillOrderTable(parsedCartItems);  
+    
+ // Encontre o botão de "Proceder ao Pagamento"
+ const proceedButton = document.querySelector('.btn-block');
+
+// Adicione um ouvinte de evento para o clique no botão
+proceedButton.addEventListener('click', function(event) {
+     // Evita que o formulário seja enviado automaticamente ao clicar
+    // Encontre os formulários que você deseja enviar
+    const form1 = document.querySelectorAll('form')[0];
+    // Use o método submit() para enviar os formulários
+    form1.submit();
+});
+
+// function para salver o valor total 
+var valorCompraTotal = setInterval(function(){
+    sessionStorage.valorCompraTotal = document.querySelector('#cartSubtotal').innerText.replace(/\D/g,'')*1
+    clearInterval(valorCompraTotal)
+},1000)
+    
+</script>
+    <!-- end script JS-->
+    
+<style>
+    /* Estilos para a checkbox */
+    .custom-checkbox {
+      transform: scale(2.5); /* Ajusta o tamanho da checkbox */
+      margin-right: 5px; /* Adiciona um espaço à direita para separar do texto */
+    }
+</style>
+</body>
+
+<footer class="footer-section">
+  <br><br>
+			<div class="container relative">
+
+				<div class="sofa-img">
+					<img src="public/images/Logo_Eduxa_Digital_Horizontal_Fundo-Transparente_Gradiente.png" alt="Image" class="img-fluid">					
+				</div>
+
+		
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Eduxa<span></span></a></div>
+						
+
+						<ul class="list-unstyled custom-social">
+							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>					
+						</ul>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Contato</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Suporte</a></li>							
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Politicas e privacidade </a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">						
+									<li><a href="#">Termons e condições </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="">fbelmotnes@</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
+            </p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+</html>
